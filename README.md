@@ -54,7 +54,7 @@ Click on: Settings/MQTT
 </tr>
 </table>
 When u ready it looks like this:
-<img src="http://stair-lighting.com/images/MI-LIGHT/WiFi-iBox2/mini/250px_wifi-ibox2-1.jpg">
+<img src="https://github.com/Strontvlieg/Home-Assistant-MiLight-MQTT/blob/main/hub.png">
 </p>
 <h3>Setup Home Assistant</h3>
 <h4>configuration.yaml</h4>
