@@ -1,6 +1,6 @@
 # Home Assistant MiLight MQTT
 Controls your miLights V6 bulbs with Home Assistant and [Sidoh ESP8266 MiLight Hub](https://github.com/sidoh/esp8266_milight_hub) with MQTT.<br/>
-<h4>Setup Sidoh ESP8266 MiLight Hub</h4>
+<h3>Setup Sidoh ESP8266 MiLight Hub</h3>
 <p>
 Click on: Settings/MQTT
 <ul>
@@ -18,6 +18,7 @@ Click on: Settings/MQTT
   <li>MQTT debounce delay = 500</li>
 </ul>
 </p>
+<h3>Setup Home Assistant</h3>
 <h4>configuration.yaml</h4>
 <p>
 <pre><code class="language-yaml">
