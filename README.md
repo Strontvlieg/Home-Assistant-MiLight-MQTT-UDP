@@ -3,10 +3,45 @@ Controls your miLights V6 bulbs with Home Assistant and [Sidoh ESP8266 MiLight H
 <h3>Setup Sidoh ESP8266 MiLight Hub</h3>
 <p>
 Click on: Settings/MQTT
+<table>
+<tr>
+<td>MQTT server</td>
+<td>MQTT server IP</td>
+</tr>
+<tr>
+<td>MQTT topic pattern</td>
+<td>milight/commands/:device_id/:device_type/:group_id</td>
+</tr>
+<tr>
+<td>MQTT update topic pattern</td>
+<td>mililight/updates/:device_id/:device_type/:group_id</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</table>
+</p>
+
+<p>
+Click on: Settings/MQTT
 <ul>
   <li>MQTT server = MQTT server IP</li>
   <li>MQTT topic pattern = milight/commands/:device_id/:device_type/:group_id</li>
   <li>MQTT update topic pattern = mililight/updates/:device_id/:device_type/:group_id</li>
+  
   <li>MQTT state topic pattern = milight/states/:device_id/:device_type/:group_id</li>
   <li>MQTT user name = MQTT server username</li>
   <li>MQTT password = MQTT server password</li>
