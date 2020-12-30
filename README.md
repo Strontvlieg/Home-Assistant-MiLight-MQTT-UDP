@@ -1,4 +1,4 @@
-# Home Assistant MiLight MQTT
+# Home Assistant MiLight with MQTT
 Controls your miLights V6 bulbs with Home Assistant and [Sidoh ESP8266 MiLight Hub](https://github.com/sidoh/esp8266_milight_hub) with MQTT.<br/>
 <h3>Setup Sidoh ESP8266 MiLight Hub</h3>
 <p>
@@ -6,7 +6,7 @@ Click on: Settings/MQTT
 <table>
 <tr>
 <td>MQTT server</td>
-<td>MQTT server IP</td>
+<td>Server IP</td>
 </tr>
 <tr>
 <td>MQTT topic pattern</td>
@@ -22,11 +22,11 @@ Click on: Settings/MQTT
 </tr>
 <tr>
 <td>MQTT user name</td>
-<td>MQTT server username</td>
+<td>Username</td>
 </tr>
 <tr>
 <td>MQTT password</td>
-<td>MQTT server password</td>
+<td>Password</td>
 </tr>
 <tr>
 <td>MQTT Client Status Topic</td>
@@ -53,6 +53,8 @@ Click on: Settings/MQTT
 <td>500</td>
 </tr>
 </table>
+When u ready it looks like this:
+<img src="http://stair-lighting.com/images/MI-LIGHT/WiFi-iBox2/mini/250px_wifi-ibox2-1.jpg">
 </p>
 <h3>Setup Home Assistant</h3>
 <h4>configuration.yaml</h4>
