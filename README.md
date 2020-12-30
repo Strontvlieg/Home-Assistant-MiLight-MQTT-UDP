@@ -1,5 +1,23 @@
 # Home Assistant MiLight MQTT
-Controls your miLights bulbs with Home Assistant and [Sidoh ESP8266 MiLights Hub](https://github.com/sidoh/esp8266_milight_hub) with MQTT.<br/>
+Controls your miLights V6 bulbs with Home Assistant and [Sidoh ESP8266 MiLight Hub](https://github.com/sidoh/esp8266_milight_hub) with MQTT.<br/>
+<h4>Setup Sidoh ESP8266 MiLight Hub</h4>
+<p>
+Click on: Settings/MQTT
+<ul>
+  <li>MQTT server = MQTT server IP</li>
+  <li>MQTT topic pattern = milight/commands/:device_id/:device_type/:group_id</li>
+  <li>MQTT update topic pattern = mililight/updates/:device_id/:device_type/:group_id</li>
+  <li>MQTT state topic pattern = milight/states/:device_id/:device_type/:group_id</li>
+  <li>MQTT user name = MQTT server username</li>
+  <li>MQTT password = MQTT server password</li>
+  <li>MQTT Client Status Topic = milight/status/:device_id/:device_type/:group_id</li>
+  <li>Publish state messages with retain flag = Enabled</li>
+  <li>Client Status Messages Mode = Detailed</li>
+  <li>HomeAssistant MQTT Discovery Prefix = </li>
+  <li>MQTT state rate limit = 500</li>
+  <li>MQTT debounce delay = 500</li>
+</ul>
+</p>
 <h4>configuration.yaml</h4>
 <p>
 <pre><code class="language-yaml">
