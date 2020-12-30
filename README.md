@@ -1,5 +1,5 @@
-# Home-Assistant-MiLight-MQTT
-
+# Home Assistant MiLight MQTT
+Controls your miLights bulbs with Home Assistant and [Sidoh ESP8266 MiLights Hub](https://github.com/sidoh/esp8266_milight_hub) with MQTT.<br/>
 <h4>configuration.yaml</h4>
 <p>
 <pre><code class="language-yaml">
