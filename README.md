@@ -17,41 +17,42 @@ Click on: Settings/MQTT
 <td>mililight/updates/:device_id/:device_type/:group_id</td>
 </tr>
 <tr>
-<td></td>
+<td>MQTT state topic pattern</td>
+<td>milight/states/:device_id/:device_type/:group_id</td>
+</tr>
+<tr>
+<td>MQTT user name</td>
+<td>MQTT server username</td>
+</tr>
+<tr>
+<td>MQTT password</td>
+<td>MQTT server password</td>
+</tr>
+<tr>
+<td>MQTT Client Status Topic</td>
+<td>milight/status/:device_id/:device_type/:group_id</td>
+</tr>
+<tr>
+<td>Publish state messages with retain flag</td>
+<td>Enabled</td>
+</tr>
+<tr>
+<td>Client Status Messages Mode</td>
+<td>Detailed</td>
+</tr>
+<tr>
+<td>HomeAssistant MQTT Discovery Prefix</td>
 <td></td>
 </tr>
 <tr>
-<td></td>
-<td></td>
+<td>MQTT state rate limit</td>
+<td>500</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
+<td>MQTT debounce delay</td>
+<td>500</td>
 </tr>
 </table>
-</p>
-
-<p>
-Click on: Settings/MQTT
-<ul>
-  <li>MQTT server = MQTT server IP</li>
-  <li>MQTT topic pattern = milight/commands/:device_id/:device_type/:group_id</li>
-  <li>MQTT update topic pattern = mililight/updates/:device_id/:device_type/:group_id</li>
-  
-  <li>MQTT state topic pattern = milight/states/:device_id/:device_type/:group_id</li>
-  <li>MQTT user name = MQTT server username</li>
-  <li>MQTT password = MQTT server password</li>
-  <li>MQTT Client Status Topic = milight/status/:device_id/:device_type/:group_id</li>
-  <li>Publish state messages with retain flag = Enabled</li>
-  <li>Client Status Messages Mode = Detailed</li>
-  <li>HomeAssistant MQTT Discovery Prefix = </li>
-  <li>MQTT state rate limit = 500</li>
-  <li>MQTT debounce delay = 500</li>
-</ul>
 </p>
 <h3>Setup Home Assistant</h3>
 <h4>configuration.yaml</h4>
