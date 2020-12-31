@@ -2,7 +2,7 @@
 Controls your miLights V6 bulbs with Home Assistant and [Sidoh ESP8266 MiLight Hub](https://github.com/sidoh/esp8266_milight_hub) with MQTT.<br/>
 
 
-<h3>Setup ESP8266 MiLight Hub</h3>
+<h3>Setup the ESP8266 MiLight Hub</h3>
 <p>
 Click on: Settings/MQTT
 <table>
@@ -55,8 +55,6 @@ Click on: Settings/MQTT
 <td>500</td>
 </tr>
 </table>
-
-
 Click on: Settings/UDP
 <table>
 <tr>
@@ -72,6 +70,9 @@ Click on: Settings/UDP
 <td>6</td>
 </tr>
 </table>
+</br>
+</br>
+
 
 When it's ready it looks like this:
 <h4>MQTT</h4>
@@ -79,6 +80,8 @@ When it's ready it looks like this:
 <h4>UDP</h4>
 <img src="https://github.com/Strontvlieg/Home-Assistant-MiLight-MQTT/blob/main/udp.png">
 </p>
+</br>
+</br>
 
 
 <h3>Setup Home Assistant</h3>
