@@ -115,7 +115,7 @@ light:
     command_topic: "milight/commands/0x1000/rgb_cct/0"
     state_topic: "milight/states/0x1000/rgb_cct/0"
     
-    # Use YAML anchor for common settings for other lights.
+    # Use YAML anchor for common settings for other MiLights.
     <<: &MILIGHTS_RGBCCT_PARAMS
       platform: mqtt
       schema: json
