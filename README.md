@@ -55,8 +55,8 @@ Click on: Settings/MQTT
 <td>500</td>
 </tr>
 </table>
-When it's ready it looks like this:
-<img src="https://github.com/Strontvlieg/Home-Assistant-MiLight-MQTT/blob/main/mqtt.png">
+
+
 Click on: Settings/UDP
 <table>
 <tr>
@@ -72,7 +72,11 @@ Click on: Settings/UDP
 <td>6</td>
 </tr>
 </table>
+
 When it's ready it looks like this:
+<h4>MQTT</h4>
+<img src="https://github.com/Strontvlieg/Home-Assistant-MiLight-MQTT/blob/main/mqtt.png">
+<h4>UDP</h4>
 <img src="https://github.com/Strontvlieg/Home-Assistant-MiLight-MQTT/blob/main/udp.png">
 </p>
 
