@@ -95,8 +95,7 @@ mqtt:
   client_id: home-assistant-1
   keepalive: 60
   discovery: true
-</code></pre>  
-<pre><code class="language-yaml">
+
 # Setup the MiLights
 light:
   - platform: mqtt
@@ -122,9 +121,32 @@ light:
       - night_mode
     optimistic: true
     qos: 0
+  - platform: mqtt
+    name: Achterkamer
+    schema: json
+    command_topic: "milight/commands/0x1000/rgb_cct/2"
+    state_topic: "milight/states/0x1000/rgb_cct/2"
+    brightness: true
+    rgb: true
+    color_temp: true
+    effect: true
+    effect_list:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      - '6'
+      - '7'
+      - '8'
+      - white_mode
+      - night_mode
+    optimistic: true
+    qos: 0
 </code></pre>
-
-
+</br>
+</br>
 If you want to use UDP fill in the following settings.
 <h4>configuration.yaml</h4>
 <pre><code class="language-yaml">
@@ -142,22 +164,6 @@ light:
             fade: false
           - number: 2
             name: Achterkamer
-            type: rgbww
-            fade: false
-      - host: 192.168.1.102
-        port: 5988
-        version: 6
-        groups:
-          - number: 1
-            name: Veranda
-            type: rgbww
-            fade: false
-          - number: 2
-            name: Carport
-            type: rgbww
-            fade: false
-          - number: 3
-            name: Overstekken
             type: rgbww
             fade: false
 </code></pre>
