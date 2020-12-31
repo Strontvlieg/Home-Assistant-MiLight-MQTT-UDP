@@ -84,9 +84,14 @@ When it's ready it looks like this:
 </br>
 </br>
 If you now monitor the MQTT server with MQTT.fx you will see the following information.
+</br>
 <img src="https://github.com/Strontvlieg/Home-Assistant-MiLight-MQTT/blob/main/fx.png">
+</br>
+</br>
 Look at the MQTT message on you server. They are automatically filled in with the correct information, this message is from: milight/states/:device_id/:device_type/:group_id
+</br>
 <img src="https://github.com/Strontvlieg/Home-Assistant-MiLight-MQTT/blob/main/mqtt_string.png">
+</br>
 red = device_id / green = device_type / blue = group
 
 
