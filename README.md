@@ -1,5 +1,5 @@
 # Home Assistant MiLight with MQTT or UDP
-Controls your miLights V6 bulbs with Home Assistant and [Sidoh ESP8266 MiLight Hub](https://github.com/sidoh/esp8266_milight_hub) with MQTT.<br/>
+Controls your miLights V6 bulbs with Home Assistant and [Sidoh ESP8266 MiLight Hub](https://github.com/sidoh/esp8266_milight_hub) with MQTT or UDP.<br/>
 
 <h1>MQTT</h1>
 <p>
