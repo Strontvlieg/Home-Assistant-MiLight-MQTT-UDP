@@ -1,9 +1,10 @@
-# Home Assistant MiLight with MQTT
+# Home Assistant MiLight with MQTT or UDP
 Controls your miLights V6 bulbs with Home Assistant and [Sidoh ESP8266 MiLight Hub](https://github.com/sidoh/esp8266_milight_hub) with MQTT.<br/>
 
+<h1>MQTT</h1>
 <p>
 <h3>Setup the ESP8266 MiLight Hub</h3>
-Click on: Settings/MQTT
+On the ESP8266 MiLight Hub click on: Settings/MQTT
 <table>
 <tr>
 <td>MQTT server</td>
@@ -54,8 +55,10 @@ Click on: Settings/MQTT
 <td>500</td>
 </tr>
 </table>
+
+
 </br>
-Click on: Settings/UDP
+On the ESP8266 MiLight Hub click on: Settings/UDP
 <table>
 <tr>
 <td>Device ID</td>
@@ -78,13 +81,16 @@ When it's ready it looks like this:
 <img src="https://github.com/Strontvlieg/Home-Assistant-MiLight-MQTT/blob/main/mqtt.png">
 <h4>UDP</h4>
 <img src="https://github.com/Strontvlieg/Home-Assistant-MiLight-MQTT/blob/main/udp.png">
-</p>
+</br>
+</br>
+If you now monitor the MQTT server with MQTT.fx you will see the following information.
+<img src="https://github.com/Strontvlieg/Home-Assistant-MiLight-MQTT/blob/main/fx.png">
+Look at the MQTT message on you server. They are automatically filled in with the correct information, this message is from: milight/states/:device_id/:device_type/:group_id
+<img src="https://github.com/Strontvlieg/Home-Assistant-MiLight-MQTT/blob/main/mqtt_string.png">
+red = device_id / green = device_type / blue = group
 
-<p>
-Choose between MQTT or UDP and add this configuration to Home Assistant
-</P
 
-<p>
+</br>
 <h3>Setup Home Assistant for MQTT</h3>
 <h4>configuration.yaml</h4>
 <pre><code class="language-yaml">
@@ -147,9 +153,34 @@ light:
     optimistic: true
     qos: 0
 </code></pre>
+</p>
 
 
+</br>
+</br>
+<h1>UDP</h1>
+<p>
 <h3>Setup Home Assistant for UDP</h3>
+On the ESP8266 MiLight Hub click on: Settings/UDP
+</table>
+</br>
+Click on: Settings/UDP
+<table>
+<tr>
+<td>Device ID</td>
+<td>0x1000</td>
+</tr>
+<tr>
+<td>UDP Port</td>
+<td>5987</td>
+</tr>
+<tr>
+<td>Protocol Version</td>
+<td>6</td>
+</tr>
+</table>
+
+
 <h4>configuration.yaml</h4>
 <pre><code class="language-yaml">
 # Setup the MiLights
