@@ -77,9 +77,7 @@ On the ESP8266 MiLight Hub click on: Settings/UDP
 
 
 When it's ready it looks like this:
-<h4>MQTT</h4>
 <img src="https://github.com/Strontvlieg/Home-Assistant-MiLight-MQTT/blob/main/mqtt.png">
-<h4>UDP</h4>
 <img src="https://github.com/Strontvlieg/Home-Assistant-MiLight-MQTT/blob/main/udp.png">
 </br>
 </br>
@@ -176,6 +174,9 @@ On the ESP8266 MiLight Hub click on: Settings/UDP
 <td>6</td>
 </tr>
 </table>
+<img src="https://github.com/Strontvlieg/Home-Assistant-MiLight-MQTT/blob/main/udp.png">
+</br>
+
 
 <h3>Setup Home Assistant for UDP</h3>
 <h4>configuration.yaml</h4>
