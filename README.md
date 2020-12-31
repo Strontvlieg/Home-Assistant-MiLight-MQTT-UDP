@@ -110,7 +110,7 @@ mqtt:
 
 <pre><code class="language-yaml">
 light:
-  - name: Woonkamer
+  - name: MiLight 0x1000 Zone 0
     unique_id: milight_0x1000_zone_0
     command_topic: "milight/commands/0x1000/rgb_cct/0"
     state_topic: "milight/states/0x1000/rgb_cct/0"
