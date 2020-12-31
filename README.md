@@ -160,11 +160,8 @@ light:
 </br>
 <h1>UDP</h1>
 <p>
-<h3>Setup Home Assistant for UDP</h3>
+<h3>Setup the ESP8266 MiLight Hub</h3>
 On the ESP8266 MiLight Hub click on: Settings/UDP
-</table>
-</br>
-Click on: Settings/UDP
 <table>
 <tr>
 <td>Device ID</td>
@@ -180,7 +177,7 @@ Click on: Settings/UDP
 </tr>
 </table>
 
-
+<h3>Setup Home Assistant for UDP</h3>
 <h4>configuration.yaml</h4>
 <pre><code class="language-yaml">
 # Setup the MiLights
