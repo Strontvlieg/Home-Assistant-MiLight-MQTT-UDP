@@ -80,6 +80,9 @@ When it's ready it looks like this:
 <img src="https://github.com/Strontvlieg/Home-Assistant-MiLight-MQTT/blob/main/udp.png">
 </p>
 
+<p>
+Choose between MQTT or UDP and add this configuration to Home Assistant
+</P
 
 <p>
 <h3>Setup Home Assistant for MQTT</h3>
