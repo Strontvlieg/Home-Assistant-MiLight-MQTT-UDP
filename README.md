@@ -71,7 +71,6 @@ Click on: Settings/UDP
 </tr>
 </table>
 </br>
-</br>
 
 
 When it's ready it looks like this:
@@ -80,8 +79,7 @@ When it's ready it looks like this:
 <h4>UDP</h4>
 <img src="https://github.com/Strontvlieg/Home-Assistant-MiLight-MQTT/blob/main/udp.png">
 </p>
-</br>
-</br>
+
 
 <p>
 <h3>Setup Home Assistant</h3>
@@ -95,7 +93,9 @@ mqtt:
   client_id: home-assistant-1
   keepalive: 60
   discovery: true
+</code></pre>
 
+<pre><code class="language-yaml">
 # Setup the MiLights
 light:
   - platform: mqtt
@@ -145,6 +145,7 @@ light:
     optimistic: true
     qos: 0
 </code></pre>
+
 </br>
 </br>
 If you want to use UDP fill in the following settings.
