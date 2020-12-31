@@ -82,8 +82,7 @@ When it's ready it looks like this:
 
 
 <p>
-<h3>Setup Home Assistant</h3>
-If you want to use MQTT fill in the following settings.
+<h3>Setup Home Assistant for MQTT</h3>
 <h4>configuration.yaml</h4>
 <pre><code class="language-yaml">
 # Setup the MQTT broker
@@ -146,9 +145,8 @@ light:
     qos: 0
 </code></pre>
 
-</br>
-</br>
-If you want to use UDP fill in the following settings.
+
+<h3>Setup Home Assistant for UDP</h3>
 <h4>configuration.yaml</h4>
 <pre><code class="language-yaml">
 # Setup the MiLights
