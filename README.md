@@ -109,54 +109,56 @@ mqtt:
 </code></pre>
 
 <pre><code class="language-yaml">
-# Setup the MiLights
 light:
-  - platform: mqtt
-    name: Voorkamer
-    schema: json
+  - name: Woonkamer
+    unique_id: milight_0x1000_zone_0
+    command_topic: "milight/commands/0x1000/rgb_cct/0"
+    state_topic: "milight/states/0x1000/rgb_cct/0"
+    
+    # Use YAML anchor for common settings for other lights.
+    <<: &MILIGHTS_RGBCCT_PARAMS
+      platform: mqtt
+      schema: json
+      brightness: true
+      color_temp: true
+      rgb: true
+      effect: true
+      effect_list:
+        - night_mode
+        - white_mode
+        - '0'
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+        - '8'
+
+  - name: MiLight 0x1000 Zone 1
+    unique_id: milight_0x1000_zone_1
     command_topic: "milight/commands/0x1000/rgb_cct/1"
     state_topic: "milight/states/0x1000/rgb_cct/1"
-    brightness: true
-    rgb: true
-    color_temp: true
-    effect: true
-    effect_list:
-      - '0'
-      - '1'
-      - '2'
-      - '3'
-      - '4'
-      - '5'
-      - '6'
-      - '7'
-      - '8'
-      - white_mode
-      - night_mode
-    optimistic: true
-    qos: 0
-  - platform: mqtt
-    name: Achterkamer
-    schema: json
+    <<: *MILIGHTS_RGBCCT_PARAMS
+
+  - name: MiLight 0x1000 Zone 2
+    unique_id: milight_0x1000_zone_2
     command_topic: "milight/commands/0x1000/rgb_cct/2"
     state_topic: "milight/states/0x1000/rgb_cct/2"
-    brightness: true
-    rgb: true
-    color_temp: true
-    effect: true
-    effect_list:
-      - '0'
-      - '1'
-      - '2'
-      - '3'
-      - '4'
-      - '5'
-      - '6'
-      - '7'
-      - '8'
-      - white_mode
-      - night_mode
-    optimistic: true
-    qos: 0
+    <<: *MILIGHTS_RGBCCT_PARAMS
+
+  - name: MiLight 0x1000 Zone 3
+    unique_id: milight_0x1000_zone_3
+    command_topic: "milight/commands/0x1000/rgb_cct/3"
+    state_topic: "milight/states/0x1000/rgb_cct/3"
+    <<: *MILIGHTS_RGBCCT_PARAMS
+
+  - name: MiLight 0x1000 Zone 4
+    unique_id: milight_0x1000_zone_4
+    command_topic: "milight/commands/0x1000/rgb_cct/4"
+    state_topic: "milight/states/0x1000/rgb_cct/4"
+    <<: *MILIGHTS_RGBCCT_PARAMS
 </code></pre>
 </p>
 
@@ -196,12 +198,24 @@ light:
         port: 5987
         version: 6
         groups:
+          - number: 0
+            name: MiLight 0x1000 0
+            type: rgbww
+            fade: false
           - number: 1
-            name: Voorkamer
+            name: MiLight 0x1000 1
             type: rgbww
             fade: false
           - number: 2
-            name: Achterkamer
+            name: MiLight 0x1000 2
+            type: rgbww
+            fade: false
+          - number: 3
+            name: MiLight 0x1000 3
+            type: rgbww
+            fade: false
+          - number: 4
+            name: MiLight 0x1000 4
             type: rgbww
             fade: false
 </code></pre>
