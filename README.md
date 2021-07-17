@@ -32,7 +32,7 @@ On the ESP8266 MiLight Hub click on: Settings/MQTT
 </tr>
 <tr>
 <td>MQTT Client Status Topic</td>
-<td>milight/status/:device_id/:device_type/:group_id</td>
+<td>
 </tr>
 <tr>
 <td>Publish state messages with retain flag</td>
